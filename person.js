@@ -13,4 +13,10 @@ class Person extends events {
     }
 }
 
+
+person = new Person();
+person.on('test', ()=>{console.log('Do something test is emitted');}) ;
+person.emit('test');
+
+
 module.exports = Person ;
